@@ -1,0 +1,86 @@
+html * {
+    font-family: var(--open-font-family);
+}
+
+body {
+    margin: 0;
+}
+
+.main {
+    width: 100%;
+    height: 700px;
+}
+
+.container {
+    width: 1920px;
+    overflow: hidden;
+    background-image: url(../images/image\ 23.png);
+    background-color: #E9DED4;
+    background-blend-mode: color-burn;
+}
+
+.running-line {
+    position: relative;
+    left: -207.5px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: fit-content;
+    padding: 18px 12px;
+    gap: 12px;
+    background-color: var(--running-line-background-color, red);
+    .content {
+        font-family: Merriweather;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24.2px;
+        text-align: right;
+        text-wrap: nowrap;
+        text-transform: uppercase;
+        color: var(--running-line-color);
+    }
+    .ellipse {
+        flex-shrink: 0;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: var(--running-line-color, white);
+    }
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    -ms-user-drag: none;
+}
+
+:root {
+    --running-line-color: white;
+    --running-line-background-color: red;
+
+    --nav-item-active-color: white;
+    --native-background-color: #f7cf00;
+    --nav-item-hover-color: white;
+    --nav-item-hover-background-color: #f9dd4b;
+    --footer-background-color: #333;
+    --footer-color: white;
+    --ubuntu-font-family: Ubuntu, sans-serif;
+    --open-font-family: 'Open Sans', sans-serif;
+    /* --background-green: #108484; */
+    /* #0F8080 */
+    --background-green: #17cad0;
+    --background-green-hover: #15b6bb;
+    --background-magenta: #d954db;
+    --background-gray: #e5e5e5;
+    --background-gray-light: #f2f2f2;
+    --background-color-4f4e5b: #4F4E5B;
+    /* 108484 */
+}
